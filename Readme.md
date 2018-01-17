@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Оля Петрова](https://up.htmlacademy.ru/adaptive/13/user/378519).
-* Наставник: `Неизвестно`.
+* Наставник: Господин Никто :hatching_chick:.
 
 ---
 
