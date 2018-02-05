@@ -1,0 +1,183 @@
+.download-app__phone {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 109px;
+}
+
+.download-app__block {
+  position: relative;
+  background-color: #1d2631;
+  padding-top: 28px;
+  margin-top: -3px;
+  min-height: 270px;
+  box-sizing: border-box;
+}
+
+.download-app__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.download-app__promo {
+  display: none;
+}
+
+.download-app__default {
+  margin-bottom: 32px;
+
+  &:hover,
+  &:focus {
+    background-color: @white;
+    color: @pink;
+  }
+
+  &:active {
+    background-color: @white;
+    color: fade(@pink, 30%);
+  }
+}
+
+.download-app__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 38px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.download-app__item {
+  display: flex;
+  align-items: center;
+}
+
+.download-app__link {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.download-app__link--iphone {
+  width: 47px;
+  height: 56px;
+  background-image: url("../img/logo-apple.svg");
+}
+
+.download-app__link--android {
+  width: 43px;
+  height: 47px;
+  background-image: url("../img/logo-android.svg");
+}
+
+.download-app__link--microsoft {
+  width: 44px;
+  height: 41px;
+  background-image: url("../img/logo-microsoft.svg");
+}
+
+.download-app__description {
+  color: @white;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 29px;
+}
+
+@media (min-width: @tablet-width) {
+  .download-app {
+    width: 660px;
+    height: 618px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .download-app__phone {
+    position: relative;
+    width: 700px;
+    flex-shrink: 0;
+  }
+
+  .download-app__phone-image {
+    position: absolute;
+    bottom: 0;
+    right: 360px;
+  }
+
+  .download-app__block {
+    background-color: transparent;
+    order: -1;
+  }
+
+  .download-app__wrapper {
+    width: 300px;
+  }
+
+  .download-app__promo {
+    display: block;
+    margin-top: 68px;
+    margin-bottom: 30px;
+    padding: 0 30px;
+    font-size: 40px;
+    line-height: 48px;
+    color: @white;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .download-app__default {
+    width: 300px;
+    margin-bottom: 47px;
+  }
+
+  .download-app__list {
+    padding: 0 46px;
+  }
+
+  .download-app__description {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-app {
+    width: 940px;
+    padding: 0 10px;
+    min-height: 743px;
+    display: flex;
+  }
+
+  .download-app__phone {
+    width: 1050px;
+  }
+
+  .download-app__phone-image {
+    right: 284px;
+  }
+
+  .download-app__wrapper {
+    width: 300px;
+    padding: 0;
+  }
+
+  .download-app__promo {
+    margin-top: 84px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .download-app__default {
+    font-size: 21px;
+    margin-bottom: 69px;
+  }
+
+  .download-app__list {
+    margin-bottom: 37px;
+  }
+}
