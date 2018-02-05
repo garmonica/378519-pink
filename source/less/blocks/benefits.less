@@ -1,0 +1,398 @@
+.benefits {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.benefits__intro {
+  margin-bottom: 0;
+  padding: 30px;
+}
+
+.benefits__question,
+.benefits__answer {
+  margin: 0;
+  padding: 0;
+  color: @blue;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.benefits__question {
+  margin-bottom: 30px;
+}
+
+.benefits__block {
+  padding: 83px 30px 30px;
+}
+
+.benefits__block-wrapper {
+  background-color: #f2f2f2;
+  position: relative;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: -5px 0;
+  background-size: 102%;
+}
+
+.benefits__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.benefits__caption {
+  color: @black;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.benefits__description {
+  color: @blue;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 31px;
+}
+
+.benefits__description br {
+  display: none;
+}
+
+.benefits__phone {
+  padding-top: 10px;
+}
+
+.benefits__phone-image {
+  position: relative;
+  z-index: 0;
+}
+
+.benefits__phone-image-one,
+.benefits__phone-image-two,
+.benefits__effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .benefits {
+    width: 660px;
+    padding: 10px 0 87px;
+  }
+
+  .benefits__intro {
+    margin-top: 40px;
+    margin-bottom: 48px;
+    padding: 0;
+  }
+
+  .benefits__question,
+  .benefits__answer {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .benefits__question {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .benefits__answer {
+    padding: 0 40px;
+  }
+
+  .benefits__block {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px 0 10px;
+    padding-right: 10px;
+  }
+
+  .benefits__list {
+    width: 320px;
+    text-align: left;
+    padding-top: 57px;
+    padding-left: 15px;
+  }
+
+  .benefits__item {
+    margin-bottom: 34px;
+  }
+
+  .benefits__description br {
+    display: block;
+  }
+
+  .benefits__phone {
+    position: relative;
+    width: 300px;
+  }
+
+  .benefits__phone-image {
+    position: absolute;
+    bottom: -9px;
+    left: 5px;
+    z-index: 6;
+  }
+
+  .benefits__effect {
+    position: relative;
+    background-color: @white;
+    padding-top: 96px;
+    text-align: left;
+    display: flex;
+  }
+
+  .benefits__clock {
+    position: relative;
+    padding-top: 17px;
+    display: inline-block;
+    padding-left: 38px;
+  }
+
+  .benefits__clock--circle {
+    text-align: center;
+    left: 29px;
+    bottom: -9px;
+    width: 176px;
+    height: 166px;
+    background-color: @white;
+    border: 13px solid @pink;
+    border-radius: 50%;
+    font-size: 96px;
+    line-height: 145px;
+    color: @pink;
+    font-weight: bold;
+    padding-top: 10px;
+    box-shadow: 0 0 0 18px #dedede;
+  }
+
+  .benefits__clock::before {
+    content: "";
+    position: absolute;
+    top: -38px;
+    left: 50%;
+    margin-left: -23px;
+    width: 74px;
+    height: 31px;
+    border-radius: 20px;
+    background-color: #dedede;
+  }
+
+  .benefits__clock::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -1px;
+    width: 30px;
+    height: 15px;
+    background-color: #dedede;
+  }
+
+  .benefits__clock--circle::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 2px;
+    width: 26px;
+    height: 40px;
+    background-color: #dedede;
+    border-radius: 45% 45%;
+    transform: rotate(45deg);
+  }
+
+  .benefits__text-block {
+    padding-left: 90px;
+    padding-right: 10px;
+  }
+
+  .benefits__hours {
+    margin: 0;
+    padding-top: 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    color: @black;
+  }
+
+  .benefits__britishmen {
+    margin: 9px 0;
+    padding-right: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: @blue;
+  }
+
+  .benefits__link {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: @pink;
+  }
+
+  br.benefits__br {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .benefits {
+    width: 100%;
+    padding: 0;
+  }
+
+  .benefits__intro {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 57px;
+    margin-bottom: 75px;
+  }
+
+  .benefits__question,
+  .benefits__answer {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .benefits__answer {
+    padding: 0 260px;
+  }
+
+  .benefits__block {
+    width: 960px;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .benefits__block::before {
+    content: "";
+    position: absolute;
+    width: 960px;
+    height: 32px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: 0;
+  }
+
+  .benefits__list {
+    display: flex;
+    justify-content: space-between;
+    width: 880px;
+    padding: 0 40px;
+    background-color: #f2f2f2;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .benefits__item {
+    width: 240px;
+    min-height: 230px;
+    padding-top: 55px;
+  }
+
+  .benefits__caption {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  .benefits__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .benefits__description br {
+    display: none;
+  }
+
+  .benefits__phone {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 0;
+    width: auto;
+  }
+
+  .benefits__phone-image-one,
+  .benefits__phone-image-two,
+  .benefits__phone-image {
+    display: block;
+    z-index: 20;
+  }
+
+  .benefits__phone-image {
+    position: static;
+    width: auto;
+  }
+
+  .benefits__effect {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding-top: 75px;
+    padding-bottom: 120px;
+  }
+
+  .benefits__effect br {
+    display: none;
+  }
+
+  .benefits__clock {
+    padding-left: 52px;
+    transform: scale(1.25);
+  }
+
+  .benefits__clock::before {
+    top: -38px;
+    left: 50%;
+    margin-left: -10px;
+  }
+
+  .benefits__clock::after {
+    top: -10px;
+    left: 50%;
+    margin-left: 11px;
+  }
+
+  .benefits__text-block {
+    margin-left: 32px;
+  }
+
+  .benefits__hours {
+    padding-top: 17px;
+    margin-bottom: 20px;
+  }
+
+  br.benefits__br {
+    display: inline;
+  }
+
+  .benefits__britishmen {
+    margin: 9px 0;
+    padding-right: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .benefits__link {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+    color: @pink;
+  }
+}

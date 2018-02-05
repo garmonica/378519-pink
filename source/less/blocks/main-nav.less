@@ -1,0 +1,216 @@
+.main-nav {  //навигация = лого + кнопка + меню
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__logo-desktop {
+  display: none;
+}
+
+.main-nav__logo-tablet {
+  display: none;
+}
+
+.main-nav__logo-mobile {
+  width: 75px;
+  height: 22px;
+}
+
+.main-nav__logo-svg {
+  &:focus path,
+  &:active path {
+    opacity: 0.3;
+  }
+
+  &:hover path {
+    fill: @pink;
+  }
+}
+
+.main-nav__wrapper {
+  position: relative;
+  background-color: @blue;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__logo-block { //блок = лого + кнопка
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-height: 66px;
+  background-color: fade(@black, 30%);
+  padding-top: 26px;
+  box-sizing: border-box;
+}
+
+.main-nav--opened .main-nav__logo-block { //если открыто у блока тень и высота
+  box-shadow: inset 0 -1px @black;
+  background-color: @blue;
+  min-height: 70px;
+}
+
+.main-nav__logo-link { //лого-ссылка
+  display: block;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.main-nav__logo-image { //лого-картинка
+  width: 75px;
+  height: 22px;
+}
+
+.main-nav__toggle { //кнопочка
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 66px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before { //тройной чизбургер - полоска и две тени ниже
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before,
+.main-nav--closed .main-nav__toggle:focus::before {
+  background-color: @pink;
+  box-shadow: 0 10px 0 0 @pink, 0 20px 0 0 @pink;
+}
+
+.main-nav--closed .main-nav__toggle:active::before { //при нажатии становится прозрачнее
+  background-color: @pink;
+  opacity: 0.3;
+}
+
+.main-nav--opened .main-nav__toggle { //крестик-закрытие
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 16px;
+    width: 30px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: @pink; //при нажатии крестика прозрачность
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: @pink;
+    opacity: 0.3; //при нажатии крестика прозрачность
+  }
+}
+
+.main-nav--closed .main-nav__list { //закрыто = список меню не отображается
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {  //навигация = лого + кнопка + меню
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .main-nav__logo-tablet {
+    display: block;
+    width: 147px;
+    height: 40px;
+  }
+
+  .main-nav__logo-mobile {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    width: 660px;
+  }
+
+  .main-nav__logo-block,
+  .main-nav--opened .main-nav__logo-block {
+    min-height: 110px;
+  }
+
+  .main-nav__logo-image {
+    margin-bottom: 13px;
+    width: 147px;
+    height: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {  //навигация = лого + кнопка + меню
+    width: 100%;
+    margin: 0 auto;
+    background-color: fade(@black, 30%);
+  }
+
+  .main-nav__logo-desktop {
+    display: block;
+    width: 147px;
+    height: 40px;
+  }
+
+  .main-nav__logo-tablet {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    width: 940px;
+    padding: 0 10px;
+    min-height: 110px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__logo-link {
+    padding: 0;
+    min-height: 0;
+  }
+
+  .main-nav--opened .main-nav__logo-block,
+  .main-nav--closed .main-nav__logo-block {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .main-nav--opened .main-nav__list,
+  .main-nav--closed .main-nav__list {
+    width: 621px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
