@@ -67,6 +67,7 @@
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   width: 280px;
+  min-height: 64px;
   box-sizing: border-box;
   margin-bottom: 16px;
   font-family: inherit;
@@ -185,6 +186,7 @@
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   width: 280px;
+  min-height: 64px;
   box-sizing: border-box;
   margin-bottom: 16px;
   font-family: inherit;
@@ -347,7 +349,12 @@
   text-transform: uppercase;
   text-align: center;
   padding: 38px 20px 0;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contest__group--story .contest__legend {
+  margin-left: 28px;
 }
 
 @media (min-width: @tablet-width) {
@@ -462,10 +469,6 @@
     padding-bottom: 0;
   }
 
-  .contest__group--contacts .contest__legend {
-    display: block;
-  }
-
   .contest__contacts {
     padding: 0 57px;
   }
@@ -565,6 +568,24 @@
 
   .contest__note {
     margin-top: 18px;
+  }
+
+  // ЛЕГЕНДЫ
+  .contest__group--achievements .contest__legend {
+    margin-left: 97px;
+  }
+
+  .contest__group--contacts .contest__legend {
+    display: block;
+    margin-left: 184px;
+  }
+
+  .contest__group--platform .contest__legend {
+    margin-left: 124px;
+  }
+
+  .contest__group--story .contest__legend {
+    margin-left: 191px;
   }
 }
 
@@ -669,5 +690,22 @@
 
   .contest__note--hidden {
     display: inline;
+  }
+
+  // ЛЕГЕНДЫ
+  .contest__group--achievements .contest__legend {
+    margin-left: 257px;
+  }
+
+  .contest__group--contacts .contest__legend {
+    margin-left: 344px;
+  }
+
+  .contest__group--platform .contest__legend {
+    margin-left: 31px;
+  }
+
+  .contest__group--story .contest__legend {
+    margin-left: 352px;
   }
 }

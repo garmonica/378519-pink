@@ -40,7 +40,6 @@
   justify-content: space-between;
   min-height: 66px;
   background-color: fade(@black, 30%);
-  padding-top: 26px;
   box-sizing: border-box;
 }
 
@@ -53,6 +52,7 @@
 .main-nav__logo-link { //лого-ссылка
   display: block;
   padding-left: 20px;
+  padding-top: 22px;
   box-sizing: border-box;
 }
 
@@ -153,9 +153,17 @@
     width: 660px;
   }
 
-  .main-nav__logo-block,
   .main-nav--opened .main-nav__logo-block {
     min-height: 110px;
+  }
+
+  .main-nav__logo-block {
+    min-height: 110px;
+    padding-top: 26px;
+  }
+
+  .main-nav__logo-link { //лого-ссылка
+    padding-top: 0;
   }
 
   .main-nav__logo-image {
