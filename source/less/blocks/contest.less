@@ -653,9 +653,24 @@
 
   .contest__checkbox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
     flex-wrap: wrap;
-    height: 176px;
+    min-height: 176px;
+    padding-left: 62px;
+    padding-right: 2px;
+  }
+
+  .contest__checkbox-item {
+    margin-left: 3px;
+    margin-right: 0;
+    width: 260px;
+    height: 82px;
+  }
+
+  .contest__checkbox-item:nth-child(2n) {
+    order: 2;
   }
 
   .contest__check-label::before {
